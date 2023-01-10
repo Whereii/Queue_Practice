@@ -15,8 +15,8 @@ public class Priority_Queue_Simplified {
         if (counter == 0){
             container[0] = val;
         }
-        else if(counter == container.length){
-            throw new StackOverflowError();
+        if(is_full()){
+            throw new IllegalStateException();
         }
         else {
             for(int i = counter -1; i >= 0; i--){
@@ -36,6 +36,22 @@ public class Priority_Queue_Simplified {
             }
         }
         counter ++;
+    }
+
+    public int remove(){
+        if (is_empty()){
+            throw new IllegalStateException();
+        }
+
+        return container[--counter];
+    }
+
+    public boolean is_empty(){
+        return counter == 0;
+    }
+
+    public boolean is_full(){
+        return counter == container.length;
     }
 
     public void print(){

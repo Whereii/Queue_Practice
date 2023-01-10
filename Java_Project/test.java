@@ -1,15 +1,13 @@
 package Java_Project;
 
+import java.util.Arrays;
+
+import Java_Project.Linked_List_Queue.Linked_List;
 public class test {
 
     public static void main(String[] args){
-       Priority_Queue_Simplified queue = new Priority_Queue_Simplified(5);
-        queue.insert(5);
-        queue.insert(6);
-        queue.insert(2);
-        queue.insert(1);
-        queue.insert(4);
 
-        queue.print();
+
+
     }
 }
