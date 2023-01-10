@@ -1,4 +1,4 @@
-package array_queue;
+package Java_Project;
 import java.util.ArrayDeque;
 import java.util.Queue;
 import java.util.ArrayList;

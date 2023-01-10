@@ -1,4 +1,4 @@
-package array_queue;
+package Java_Project;
 
 import java.util.Arrays;
 
